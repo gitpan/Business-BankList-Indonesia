@@ -15,12 +15,12 @@ my %module_build_args = (
   "configure_requires" => {
     "Module::Build" => "0.3601"
   },
-  "dist_abstract" => "Utilities for dealing with bank card number (ISO/IEC 7812)",
+  "dist_abstract" => "List banks/financial institutions in Indonesia",
   "dist_author" => [
     "Steven Haryanto <stevenharyanto\@gmail.com>"
   ],
   "dist_name" => "Business-BankList-Indonesia",
-  "dist_version" => "0.01",
+  "dist_version" => "0.02",
   "license" => "perl",
   "module_name" => "Business::BankList::Indonesia",
   "recommends" => {},

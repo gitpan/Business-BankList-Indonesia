@@ -1,5 +1,5 @@
 ---
-abstract: 'Utilities for dealing with bank card number (ISO/IEC 7812)'
+abstract: 'List banks/financial institutions in Indonesia'
 author:
   - 'Steven Haryanto <stevenharyanto@gmail.com>'
 build_requires:
@@ -21,4 +21,4 @@ requires:
 resources:
   homepage: http://metacpan.org/dist/Business-BankList-Indonesia
   repository: http://github.com/sharyanto/perl-Business-BankList-Indonesia
-version: 0.01
+version: 0.02
