@@ -3,7 +3,7 @@ NAME
     Indonesia
 
 VERSION
-    version 0.02
+    version 0.03
 
 SYNOPSIS
 DESCRIPTION
@@ -13,6 +13,215 @@ DESCRIPTION
 
 SEE ALSO
     Business::BankList
+
+DESCRIPTION
+    This module has Rinci metadata.
+
+FUNCTIONS
+    None are exported by default, but they are exportable.
+
+  list_id_banks(%args) -> [status, msg, result, meta]
+    Indonesian banks/financial institutions.
+
+    REPLACE ME
+
+    Arguments ('*' denotes required arguments):
+
+    *   atmb_code* => *str*
+
+        Only return records where the 'atmb_code' field equals specified
+        value.
+
+    *   atmb_code.contains => *str*
+
+        Only return records where the 'atmb_code' field contains specified
+        text.
+
+    *   atmb_code.is* => *str*
+
+        Only return records where the 'atmb_code' field equals specified
+        value.
+
+    *   atmb_code.max => *str*
+
+        Only return records where the 'atmb_code' field is less than or
+        equal to specified value.
+
+    *   atmb_code.min => *array*
+
+        Only return records where the 'atmb_code' field is greater than or
+        equal to specified value.
+
+    *   atmb_code.not_contains => *str*
+
+        Only return records where the 'atmb_code' field does not contain a
+        certain text.
+
+    *   atmb_code.xmax => *str*
+
+        Only return records where the 'atmb_code' field is less than
+        specified value.
+
+    *   atmb_code.xmin => *array*
+
+        Only return records where the 'atmb_code' field is greater than
+        specified value.
+
+    *   detail => *bool* (default: 0)
+
+        Return array of full records instead of just ID fields.
+
+        By default, only the key (ID) field is returned per result entry.
+
+    *   fields* => *array* (default: "name")
+
+        Select fields to return.
+
+    *   id* => *int*
+
+        Only return records where the 'id' field equals specified value.
+
+    *   id.is* => *int*
+
+        Only return records where the 'id' field equals specified value.
+
+    *   id.max => *int*
+
+        Only return records where the 'id' field is less than or equal to
+        specified value.
+
+    *   id.min => *array*
+
+        Only return records where the 'id' field is greater than or equal to
+        specified value.
+
+    *   id.xmax => *int*
+
+        Only return records where the 'id' field is less than specified
+        value.
+
+    *   id.xmin => *array*
+
+        Only return records where the 'id' field is greater than specified
+        value.
+
+    *   name* => *str*
+
+        Only return records where the 'name' field equals specified value.
+
+    *   name.contains => *str*
+
+        Only return records where the 'name' field contains specified text.
+
+    *   name.is* => *str*
+
+        Only return records where the 'name' field equals specified value.
+
+    *   name.max => *str*
+
+        Only return records where the 'name' field is less than or equal to
+        specified value.
+
+    *   name.min => *array*
+
+        Only return records where the 'name' field is greater than or equal
+        to specified value.
+
+    *   name.not_contains => *str*
+
+        Only return records where the 'name' field does not contain a
+        certain text.
+
+    *   name.xmax => *str*
+
+        Only return records where the 'name' field is less than specified
+        value.
+
+    *   name.xmin => *array*
+
+        Only return records where the 'name' field is greater than specified
+        value.
+
+    *   nickname* => *str*
+
+        Only return records where the 'nickname' field equals specified
+        value.
+
+    *   nickname.contains => *str*
+
+        Only return records where the 'nickname' field contains specified
+        text.
+
+    *   nickname.is* => *str*
+
+        Only return records where the 'nickname' field equals specified
+        value.
+
+    *   nickname.max => *str*
+
+        Only return records where the 'nickname' field is less than or equal
+        to specified value.
+
+    *   nickname.min => *array*
+
+        Only return records where the 'nickname' field is greater than or
+        equal to specified value.
+
+    *   nickname.not_contains => *str*
+
+        Only return records where the 'nickname' field does not contain a
+        certain text.
+
+    *   nickname.xmax => *str*
+
+        Only return records where the 'nickname' field is less than
+        specified value.
+
+    *   nickname.xmin => *array*
+
+        Only return records where the 'nickname' field is greater than
+        specified value.
+
+    *   q => *str*
+
+        Search.
+
+    *   random => *bool* (default: 0)
+
+        Return records in random order.
+
+    *   result_limit => *int*
+
+        Only return a certain number of records.
+
+    *   result_start => *int* (default: 1)
+
+        Only return starting from the n'th record.
+
+    *   sort => *str*
+
+        Order records according to certain field(s).
+
+        A list of field names separated by comma. Each field can be prefixed
+        with '-' to specify descending order instead of the default
+        ascending.
+
+    *   with_field_names => *bool*
+
+        Return field names in each record (as hash/associative array).
+
+        When enabled, function will return each record as hash/associative
+        array (field name => value pairs). Otherwise, function will return
+        each record as list/array (field value, field value, ...).
+
+    Return value:
+
+    Returns an enveloped result (an array). First element (status) is an
+    integer containing HTTP status code (200 means OK, 4xx caller error, 5xx
+    function error). Second element (msg) is a string containing error
+    message, or 'OK' if status is 200. Third element (result) is optional,
+    the actual result. Fourth element (meta) is called result metadata and
+    is optional, a hash that contains extra information.
 
 AUTHOR
     Steven Haryanto <stevenharyanto@gmail.com>
