@@ -1,0 +1,54 @@
+#!/usr/bin/perl
+
+use 5.010;
+use strict;
+use warnings;
+
+use Perinci::CmdLine;
+
+our $VERSION = '0.01'; # VERSION
+
+Perinci::CmdLine->new(url=>'/Business/BankList/Indonesia/list_id_banks')->run;
+
+1;
+# ABSTRACT: List Indonesian banks
+# PODNAME: list-id-banks
+
+
+__END__
+=pod
+
+=head1 NAME
+
+list-id-banks - List Indonesian banks
+
+=head1 VERSION
+
+version 0.01
+
+=head1 SYNOPSIS
+
+ # List all Indonesian banks
+ $ list-id-banks --detail
+
+ # Show available options
+ $ list-id-banks --help
+
+=head1 DESCRIPTION
+
+This is a command-line interface for the <list_id_banks> function in
+L<Business::BankList::Indonesia>.
+
+=head1 AUTHOR
+
+Steven Haryanto <stevenharyanto@gmail.com>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2012 by Steven Haryanto.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut
+
