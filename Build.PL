@@ -9,7 +9,7 @@ my %module_build_args = (
   "build_requires" => {
     "Module::Build" => "0.3601",
     "Perinci::CmdLine" => 0,
-    "Perinci::Sub::Gen::AccessTable" => 0,
+    "Perinci::Sub::Gen::AccessTable" => "0.14",
     "Test::More" => "0.96"
   },
   "configure_requires" => {
@@ -20,7 +20,7 @@ my %module_build_args = (
     "Steven Haryanto <stevenharyanto\@gmail.com>"
   ],
   "dist_name" => "Business-BankList-Indonesia",
-  "dist_version" => "0.03",
+  "dist_version" => "0.04",
   "license" => "perl",
   "module_name" => "Business::BankList::Indonesia",
   "recommends" => {},
