@@ -1,20 +1,28 @@
 Revision history for Business-BankList-Indonesia
 
+0.05     2014-07-22 (SHARYANTO)
+
+         - No functional changes.
+
+         - Switch CLI scripts from using Perinci::CmdLine to
+           Perinci::CmdLine::Any to reduce size of dependencies.
+
+
 0.04    2012-07-11 (SHARYANTO)
 
-        Data update (rev bc00a6a3, Wed Jul 11 12:22:39 2012 +0700).
+        - Data update (rev bc00a6a3, Wed Jul 11 12:22:39 2012 +0700).
 
 
 0.03    2012-07-06 (SHARYANTO)
 
-        No functional changes. Fix POD.
+        - No functional changes. Fix POD.
 
 
 0.02    2012-07-06 (SHARYANTO)
 
-        No functional changes. Fix POD.
+        - No functional changes. Fix POD.
 
 
 0.01    2012-07-06 (SHARYANTO)
 
-        First version.
+        - First version.
