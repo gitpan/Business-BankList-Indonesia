@@ -6,8 +6,6 @@ build_requires:
   File::Spec: '0'
   IO::Handle: '0'
   IPC::Open3: '0'
-  Perinci::CmdLine::Any: '0'
-  Perinci::Sub::Gen::AccessTable: '0.14'
   Test::More: '0'
 configure_requires:
   ExtUtils::MakeMaker: '6.30'
@@ -19,17 +17,23 @@ meta-spec:
   version: '1.4'
 name: Business-BankList-Indonesia
 requires:
+  Perinci::CmdLine::Any: '0.06'
+  Perinci::Sub::Gen::AccessTable: '0.14'
   Rinci: v1.1.0
   perl: '5.010001'
 resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Business-BankList-Indonesia
   homepage: https://metacpan.org/release/Business-BankList-Indonesia
   repository: git://github.com/sharyanto/perl-Business-BankList-Indonesia.git
-version: '0.05'
+version: '0.06'
 x_Dist_Zilla:
   perl:
     version: '5.018001'
   plugins:
+    -
+      class: Dist::Zilla::Plugin::Rinci::ScriptFromFunc
+      name: Rinci::ScriptFromFunc
+      version: '0.01'
     -
       class: Dist::Zilla::Plugin::GatherDir
       name: '@Author::SHARYANTO/@Filter/GatherDir'

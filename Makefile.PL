@@ -23,17 +23,17 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "Business::BankList::Indonesia",
   "PREREQ_PM" => {
+    "Perinci::CmdLine::Any" => "0.06",
+    "Perinci::Sub::Gen::AccessTable" => "0.14",
     "Rinci" => "v1.1.0"
   },
   "TEST_REQUIRES" => {
     "File::Spec" => 0,
     "IO::Handle" => 0,
     "IPC::Open3" => 0,
-    "Perinci::CmdLine::Any" => 0,
-    "Perinci::Sub::Gen::AccessTable" => "0.14",
     "Test::More" => 0
   },
-  "VERSION" => "0.05",
+  "VERSION" => "0.06",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -44,7 +44,7 @@ my %FallbackPrereqs = (
   "File::Spec" => 0,
   "IO::Handle" => 0,
   "IPC::Open3" => 0,
-  "Perinci::CmdLine::Any" => 0,
+  "Perinci::CmdLine::Any" => "0.06",
   "Perinci::Sub::Gen::AccessTable" => "0.14",
   "Rinci" => "v1.1.0",
   "Test::More" => 0
